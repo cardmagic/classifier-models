@@ -13,6 +13,9 @@ classifier pull spam-filter
 
 # Use a model directly (downloads if needed)
 classifier -r spam-filter "Is this spam?"
+
+# Use from a different registry
+classifier -r @other-user/models:sentiment "I love this!"
 ```
 
 ## Available Models
@@ -43,7 +46,7 @@ Or manually:
 
 ### Model JSON Format
 
-Models are standard classifier JSON exports with required metadata:
+Models are standard classifier JSON exports:
 
 ```json
 {
@@ -66,6 +69,24 @@ Models are standard classifier JSON exports with required metadata:
     "author": "github-username"
   }
 }
+```
+
+## Creating Your Own Registry
+
+Any GitHub repo with this structure works as a registry:
+
+```
+your-repo/
+├── models/
+│   └── your-model.json
+└── models.json
+```
+
+Users can then use your models:
+```bash
+classifier -r @your-username/your-repo:your-model "text"
+classifier pull @your-username/your-repo:your-model
+classifier pull @your-username/your-repo  # all models
 ```
 
 ## Guidelines
