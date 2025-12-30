@@ -12,7 +12,7 @@ classifier models
 classifier pull spam-filter
 
 # Use a model directly (downloads if needed)
-classifier --use spam-filter "Is this spam?"
+classifier -r spam-filter "Is this spam?"
 ```
 
 ## Available Models
