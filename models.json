@@ -1,4 +1,16 @@
 {
   "version": "1.0.0",
-  "models": {}
+  "models": {
+    "sms-spam-filter": {
+      "description": "SMS spam detection trained on UCI SMS Spam Collection",
+      "type": "bayes",
+      "categories": ["Spam", "Ham"],
+      "file": "models/sms-spam-filter.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "98KB",
+      "source": "UCI Machine Learning Repository - SMS Spam Collection (5,574 messages)",
+      "license": "CC BY 4.0"
+    }
+  }
 }
