@@ -84,6 +84,42 @@
       "training_samples": 200,
       "dataset_url": "http://ai.stanford.edu/~amaas/data/sentiment/",
       "license": "Research use only"
+    },
+    "ag-news": {
+      "description": "News topic classification (World, Sports, Business, Sci/Tech)",
+      "type": "bayes",
+      "categories": ["World", "Sports", "Business", "SciTech"],
+      "file": "models/ag-news.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "1.5MB",
+      "training_samples": 120000,
+      "dataset_url": "https://github.com/mhjabreel/CharCnn_Keras/tree/master/data/ag_news_csv",
+      "license": "Academic use"
+    },
+    "emotion-detection": {
+      "description": "Emotion classification (joy, love, sadness, anger, fear, surprise, neutral)",
+      "type": "bayes",
+      "categories": ["Joy", "Love", "Sadness", "Anger", "Fear", "Surprise", "Neutral"],
+      "file": "models/emotion-detection.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "491KB",
+      "training_samples": 43410,
+      "dataset_url": "https://github.com/google-research/google-research/tree/master/goemotions",
+      "license": "Apache 2.0"
+    },
+    "toxic-comments": {
+      "description": "Toxic/offensive content detection",
+      "type": "bayes",
+      "categories": ["Toxic", "Clean"],
+      "file": "models/toxic-comments.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "260KB",
+      "training_samples": 8310,
+      "dataset_url": "https://github.com/t-davidson/hate-speech-and-offensive-language",
+      "license": "MIT"
     }
   }
 }
