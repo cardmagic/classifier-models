@@ -9,8 +9,45 @@
       "version": "1.0.0",
       "author": "cardmagic",
       "size": "98KB",
-      "source": "UCI Machine Learning Repository - SMS Spam Collection (5,574 messages)",
+      "training_samples": 5574,
+      "dataset_url": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
       "license": "CC BY 4.0"
+    },
+    "imdb-sentiment": {
+      "description": "Movie review sentiment analysis (positive/negative)",
+      "type": "bayes",
+      "categories": ["Positive", "Negative"],
+      "file": "models/imdb-sentiment.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "2.1MB",
+      "training_samples": 50000,
+      "dataset_url": "https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews",
+      "license": "CC0 Public Domain"
+    },
+    "bbc-news": {
+      "description": "News article topic classification (5 categories)",
+      "type": "bayes",
+      "categories": ["Business", "Entertainment", "Politics", "Sport", "Tech"],
+      "file": "models/bbc-news.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "492KB",
+      "training_samples": 2225,
+      "dataset_url": "http://mlg.ucd.ie/datasets/bbc.html",
+      "license": "Research use only"
+    },
+    "language-detection": {
+      "description": "Detect language of text (20 languages)",
+      "type": "bayes",
+      "categories": ["Arabic", "Bulgarian", "Chinese", "Dutch", "English", "French", "German", "Greek", "Hindi", "Italian", "Japanese", "Polish", "Portuguese", "Russian", "Spanish", "Swahili", "Thai", "Turkish", "Urdu", "Vietnamese"],
+      "file": "models/language-detection.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "4.2MB",
+      "training_samples": 70000,
+      "dataset_url": "https://huggingface.co/datasets/papluca/language-identification",
+      "license": "CC BY-SA 4.0"
     }
   }
 }
