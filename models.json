@@ -48,6 +48,42 @@
       "training_samples": 70000,
       "dataset_url": "https://huggingface.co/datasets/papluca/language-identification",
       "license": "CC BY-SA 4.0"
+    },
+    "imdb-sentiment-lr": {
+      "description": "Movie review sentiment using Logistic Regression",
+      "type": "logistic_regression",
+      "categories": ["Positive", "Negative"],
+      "file": "models/imdb-sentiment-lr.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "2.6MB",
+      "training_samples": 5000,
+      "dataset_url": "http://ai.stanford.edu/~amaas/data/sentiment/",
+      "license": "Research use only"
+    },
+    "imdb-sentiment-lsi": {
+      "description": "Movie review sentiment using LSI (semantic similarity)",
+      "type": "lsi",
+      "categories": ["Positive", "Negative"],
+      "file": "models/imdb-sentiment-lsi.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "778KB",
+      "training_samples": 700,
+      "dataset_url": "http://ai.stanford.edu/~amaas/data/sentiment/",
+      "license": "Research use only"
+    },
+    "imdb-sentiment-knn": {
+      "description": "Movie review sentiment using kNN (interpretable neighbors)",
+      "type": "knn",
+      "categories": ["Positive", "Negative"],
+      "file": "models/imdb-sentiment-knn.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "487KB",
+      "training_samples": 200,
+      "dataset_url": "http://ai.stanford.edu/~amaas/data/sentiment/",
+      "license": "Research use only"
     }
   }
 }
