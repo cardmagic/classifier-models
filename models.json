@@ -120,6 +120,66 @@
       "training_samples": 8310,
       "dataset_url": "https://github.com/t-davidson/hate-speech-and-offensive-language",
       "license": "MIT"
+    },
+    "sms-spam-filter-lr": {
+      "description": "SMS spam detection using Logistic Regression",
+      "type": "logistic_regression",
+      "categories": ["Spam", "Ham"],
+      "file": "models/sms-spam-filter-lr.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "217KB",
+      "training_samples": 1000,
+      "dataset_url": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+      "license": "CC BY 4.0"
+    },
+    "bbc-news-lr": {
+      "description": "News topic classification using Logistic Regression",
+      "type": "logistic_regression",
+      "categories": ["Business", "Entertainment", "Politics", "Sport", "Tech"],
+      "file": "models/bbc-news-lr.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "1.4MB",
+      "training_samples": 250,
+      "dataset_url": "http://mlg.ucd.ie/datasets/bbc.html",
+      "license": "Research use only"
+    },
+    "ag-news-lr": {
+      "description": "News topic classification using Logistic Regression",
+      "type": "logistic_regression",
+      "categories": ["World", "Sports", "Business", "SciTech"],
+      "file": "models/ag-news-lr.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "683KB",
+      "training_samples": 800,
+      "dataset_url": "https://github.com/mhjabreel/CharCnn_Keras/tree/master/data/ag_news_csv",
+      "license": "Academic use"
+    },
+    "emotion-detection-lr": {
+      "description": "Emotion classification using Logistic Regression",
+      "type": "logistic_regression",
+      "categories": ["Joy", "Love", "Sadness", "Anger", "Fear", "Surprise", "Neutral"],
+      "file": "models/emotion-detection-lr.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "604KB",
+      "training_samples": 1400,
+      "dataset_url": "https://github.com/google-research/google-research/tree/master/goemotions",
+      "license": "Apache 2.0"
+    },
+    "toxic-comments-lr": {
+      "description": "Toxic/offensive content detection using Logistic Regression",
+      "type": "logistic_regression",
+      "categories": ["Toxic", "Clean"],
+      "file": "models/toxic-comments-lr.json",
+      "version": "1.0.0",
+      "author": "cardmagic",
+      "size": "205KB",
+      "training_samples": 600,
+      "dataset_url": "https://github.com/t-davidson/hate-speech-and-offensive-language",
+      "license": "MIT"
     }
   }
 }
